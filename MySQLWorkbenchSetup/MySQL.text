@@ -1,0 +1,19 @@
+SELECT * FROM friendships_schema.users;
+
+#Create
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "Ruddell");
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "Riddell");
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "Caylor");
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "CENAAAA");
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "John");
+INSERT INTO friendships_schema.users (first_name, last_name) VALUE ("Sean", "ShaunShawn");
+
+#Read/Retrieve
+SELECT first_name FROM friendships_schema.users;
+SELECT * FROM friendships_schema.users;
+
+#Update
+UPDATE friendships_schema.users SET last_name = "Riddell" WHERE users.id = 2;
+
+#Delete
+DELETE FROM friendships_schema.users WHERE users.id = 7;
